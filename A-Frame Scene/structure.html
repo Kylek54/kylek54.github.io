@@ -8,18 +8,15 @@
 
 <body>
 	
-
-
-
 <a-scene antialias="true" fog="type:  exponential;  color:  #121212;  density:  0.06;  far:  986.99;  near:  2.69">
 	<a-assets>
-		<img id="moon" src="images/death.png" crossorigin="anonymous" />
-		<img id="wood" src="images\wood.jpg" crossorigin="anonymous"/>
+		<img id="moon" src="A-Frame Scene\images\death.png" crossorigin="anonymous" />
+		<img id="wood" src="A-Frame Scene\images\wood.jpg" crossorigin="anonymous"/>
 		</a-assets>
 	
 		
 	<a-sky 
-	color="#FFFFFF" a-sky="" material="color: #4d4d4d" geometry="">
+	color="#FFFFFF"  >
 	</a-sky>
 
 	<a-plane
@@ -31,17 +28,17 @@
 	</a-plane>
 	
 	<a-sphere
+		color = "#af"
 		radius = "4"
 		position = "-40 40 -40"
-		shadow = "cast: true; receive: true"
-		material = "src: #moon">
-	</a-sphere>
+		material = "src: #moon; color: #696969; roughness: 1; metalness: 0;"
+		shadow = "cast: true; receive: true"></a-sphere>
 
 	<!-- Front Facing Wall for Cabin-->
 	<a-cylinder
 		radius = "0.25" height = "5"
 		rotation="-90 45 0" 
-		src= "#wood"
+		material = "src: #wood;"
 		position = "5 0.25 -5"
 		shadow = "cast: true; receive: true">
 	</a-cylinder>
