@@ -14,6 +14,7 @@
 		<img id="wood" src="images/wood.jpg" crossorigin="anonymous"/>
 		<img id="grass" src="images/grass.jpg" crossorigin="anonymous"/>
 		<img id="cactus" src="images/grass.jpg" crossorigin="anonmymous" />
+		<img id="meme" src="images/meme.jpg" crossorigin="anonmymous" />
 	</a-assets>
 	
 		
@@ -267,24 +268,51 @@
 		radius = "0.05" height = ".4"
 		rotation="0 0 30" 
 		position="-1.20 2.5 -3.6"
-		material ="src: #cactus"
 		shadow = "cast: true; receive: true">
 	</a-sphere>
 	<a-sphere
 		radius = "0.05" height = ".4"
 		rotation="0 0 30" 
 		position="-1.40 2.4 -3.65"
-		material ="src: #cactus"
 		shadow = "cast: true; receive: true">
 	</a-sphere>
 	<a-cylinder
 		radius = "0.05" height=".5"
 		position="-1.05 2.0 -3.6"
 		rotation="0 0 30"
-		material ="src: #cactus"
 	></a-cylinder>
+	<a-cone
+		color = "#FFFFFF"
+		radius-bottom=".05" 
+		radius-top="0" 
+		height="1" 
+		position="-1.8 3.4 -3.9" 
+		rotation = "0 0 30">
+	</a-cone>
+	<a-cone
+		color = "#FFFFFF"
+		radius-bottom=".05" 
+		radius-top="0" 
+		height="1" 
+		position="-1.6 3.4 -3.9" 
+		rotation = "0 0 15">
+	</a-cone>
+	<a-cone
+		color = "#FFFFFF"
+		radius-bottom=".05" 
+		radius-top="0" 
+		height="1" 
+		position="-2 3.4 -3.9" 
+		rotation = "0 0 45">
+	</a-cone>
 
-
+	<!--Meme-->
+	<a-sphere
+	radius = "2"
+	position ="7 0 -7"
+	material ="src: #meme"
+	
+	></a-sphere>
 </a-scene>
 </body>
 </html>
